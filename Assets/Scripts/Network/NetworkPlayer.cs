@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using System;
 using UnityEditor;
+using Mirror.Examples.Common;
 
 namespace Deforestation.Network
 { 
@@ -51,7 +52,7 @@ public class NetworkPlayer : MonoBehaviourPun
                 _health.enabled = true;
                 _inventory.enabled = true;
                 _interactions.enabled = true;
-                _fps.enabled = true;
+               
                 _controller.enabled = true;
 
                 Invoke(nameof(AddInitialCrystals), 1);
@@ -77,7 +78,7 @@ public class NetworkPlayer : MonoBehaviourPun
             Destroy(_inventory);
             Destroy(_interactions);
             Destroy(_controller);
-            Destroy(_fps);
+            
             Destroy(_inputs);
             Destroy(_inputsPlayer);
         }
@@ -118,11 +119,8 @@ public class NetworkPlayer : MonoBehaviourPun
             throw new NotImplementedException();
         }
 
-        private void Destroy(FirstPersonController fps)
-        {
-            throw new NotImplementedException();
-        }
         
+
         #endregion
 
         #region Private Methods

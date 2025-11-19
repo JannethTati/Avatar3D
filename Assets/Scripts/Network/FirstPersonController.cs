@@ -1,7 +1,6 @@
-﻿namespace Deforestation
+﻿namespace Deforestation.Network
 {
     internal class FirstPersonController
     {
-        internal bool enabled;
     }
 }

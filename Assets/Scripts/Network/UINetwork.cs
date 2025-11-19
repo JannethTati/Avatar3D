@@ -52,7 +52,8 @@ namespace Deforestation.Network
 
         internal void LoadingComplete()
         {
-            throw new NotImplementedException();
+            if (_connectingPanel != null)
+                _connectingPanel.SetActive(false);
         }
 
         #endregion

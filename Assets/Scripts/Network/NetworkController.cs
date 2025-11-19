@@ -113,6 +113,8 @@ namespace Deforestation.Network
             UnityEngine.Cursor.lockState = CursorLockMode.None;
             UnityEngine.Cursor.visible = true;
             _ui.EndGamePanel.SetActive(true);
+
+
         }
     }
 }

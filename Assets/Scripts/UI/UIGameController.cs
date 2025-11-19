@@ -18,7 +18,7 @@ namespace Deforestation.UI
         private Inventory _inventory => GameController.Instance.Inventory;
 
         [Obsolete]
-        private InteractionSystem _interactionSystem => GameController.Instance?.InteractionSystem;
+        private InteractionSystem _interactionSystem => GameController.Instance.InteractionSystem;
 
         [Header("Settings")]
         [SerializeField] private AudioMixer _mixer;
@@ -47,10 +47,6 @@ namespace Deforestation.UI
         void Start()
         {
             _settingsPanel.SetActive(false);
-
-            if (_inventory == null)
-
-                return;
 
             //My Events
             _inventory.OnInventoryUpdated += UpdateUIInventory;
